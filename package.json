@@ -1,0 +1,251 @@
+{
+  "name": "notelook",
+  "displayName": "NoteLook",
+  "publisher": "anghunk",
+  "description": "一款强大的笔记管理插件，支持收藏夹、最近文件和搜索功能。",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anghunk/vsc-notelook"
+  },
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.106.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onView:notelook.explorer"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "notelook",
+          "title": "NoteLook",
+          "icon": "$(notebook)"
+        }
+      ]
+    },
+    "views": {
+      "notelook": [
+        {
+          "id": "notelook.explorer",
+          "name": "%view.explorer%",
+          "dragAndDrop": true
+        },
+        {
+          "id": "notelook.favorites",
+          "name": "%view.favorites%",
+          "visibility": "collapsed"
+        },
+        {
+          "id": "notelook.recent",
+          "name": "%view.recent%",
+          "visibility": "collapsed"
+        },
+        {
+          "id": "notelook.hidden",
+          "name": "%view.hidden%",
+          "visibility": "collapsed"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "notelook.addFolder",
+        "title": "%command.addFolder%",
+        "icon": "$(add)"
+      },
+      {
+        "command": "notelook.refresh",
+        "title": "%command.refresh%",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "notelook.openFile",
+        "title": "%command.openFile%"
+      },
+      {
+        "command": "notelook.hideItem",
+        "title": "%command.hideItem%"
+      },
+      {
+        "command": "notelook.showItem",
+        "title": "%command.showItem%"
+      },
+      {
+        "command": "notelook.renameItem",
+        "title": "%command.renameItem%"
+      },
+      {
+        "command": "notelook.deleteItem",
+        "title": "%command.deleteItem%"
+      },
+      {
+        "command": "notelook.copyItem",
+        "title": "%command.copyItem%"
+      },
+      {
+        "command": "notelook.cutItem",
+        "title": "%command.cutItem%"
+      },
+      {
+        "command": "notelook.pasteItem",
+        "title": "%command.pasteItem%"
+      },
+      {
+        "command": "notelook.newFile",
+        "title": "%command.newFile%"
+      },
+      {
+        "command": "notelook.newFolder",
+        "title": "%command.newFolder%"
+      },
+      {
+        "command": "notelook.search",
+        "title": "%command.search%",
+        "icon": "$(search)"
+      },
+      {
+        "command": "notelook.clearSearch",
+        "title": "%command.clearSearch%",
+        "icon": "$(clear-all)"
+      },
+      {
+        "command": "notelook.previewMarkdown",
+        "title": "%command.previewMarkdown%",
+        "icon": "$(open-preview)"
+      },
+      {
+        "command": "notelook.addToFavorites",
+        "title": "%command.addToFavorites%"
+      },
+      {
+        "command": "notelook.removeFromFavorites",
+        "title": "%command.removeFromFavorites%"
+      },
+      {
+        "command": "notelook.clearRecent",
+        "title": "%command.clearRecent%",
+        "icon": "$(clear-all)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "notelook.addFolder",
+          "when": "view == notelook.explorer",
+          "group": "navigation"
+        },
+        {
+          "command": "notelook.refresh",
+          "when": "view == notelook.explorer",
+          "group": "navigation"
+        },
+        {
+          "command": "notelook.search",
+          "when": "view == notelook.explorer",
+          "group": "navigation"
+        },
+        {
+          "command": "notelook.clearSearch",
+          "when": "view == notelook.explorer",
+          "group": "navigation"
+        },
+        {
+          "command": "notelook.newFile",
+          "when": "view == notelook.explorer",
+          "group": "1_new@1"
+        },
+        {
+          "command": "notelook.newFolder",
+          "when": "view == notelook.explorer",
+          "group": "1_new@2"
+        },
+        {
+          "command": "notelook.clearRecent",
+          "when": "view == notelook.recent",
+          "group": "navigation"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "notelook.newFile",
+          "when": "view == notelook.explorer && viewItem == folder",
+          "group": "1_new@1"
+        },
+        {
+          "command": "notelook.newFolder",
+          "when": "view == notelook.explorer && viewItem == folder",
+          "group": "1_new@2"
+        },
+        {
+          "command": "notelook.hideItem",
+          "when": "view == notelook.explorer",
+          "group": "2_modification@1"
+        },
+        {
+          "command": "notelook.renameItem",
+          "when": "view == notelook.explorer",
+          "group": "2_modification@2"
+        },
+        {
+          "command": "notelook.deleteItem",
+          "when": "view == notelook.explorer",
+          "group": "2_modification@3"
+        },
+        {
+          "command": "notelook.copyItem",
+          "when": "view == notelook.explorer",
+          "group": "3_clipboard@1"
+        },
+        {
+          "command": "notelook.cutItem",
+          "when": "view == notelook.explorer",
+          "group": "3_clipboard@2"
+        },
+        {
+          "command": "notelook.pasteItem",
+          "when": "view == notelook.explorer",
+          "group": "3_clipboard@3"
+        },
+        {
+          "command": "notelook.previewMarkdown",
+          "when": "view == notelook.explorer && resourceExtname == .md",
+          "group": "4_preview@1"
+        },
+        {
+          "command": "notelook.addToFavorites",
+          "when": "view == notelook.explorer",
+          "group": "5_favorites@1"
+        },
+        {
+          "command": "notelook.showItem",
+          "when": "view == notelook.hidden",
+          "group": "inline"
+        },
+        {
+          "command": "notelook.removeFromFavorites",
+          "when": "view == notelook.favorites",
+          "group": "inline"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.106.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.25.1",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
