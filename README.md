@@ -1,5 +1,13 @@
 [简体中文](#notelook中文) | [English](#notelook)
 
+> A powerful note management plugin that supports bookmarks, recent files, and search functionality.
+
+> 一款强大的笔记管理插件，支持收藏夹、最近文件和搜索功能。
+
+[Github](https://github.com/anghunk/vsc-notelook) | [Extensions](https://marketplace.visualstudio.com/items?itemName=anghunk.notelook)
+
+![NoteLook](./image.png)
+
 ## NoteLook
 
 VS Code Notes Management Extension.

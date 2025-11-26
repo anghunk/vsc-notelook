@@ -1,8 +1,8 @@
 {
 	"view.explorer": "文件浏览器",
-	"view.favorites": "快速访问",
+	"view.favorites": "收藏夹",
 	"view.recent": "最近打开",
-	"view.hidden": "隐藏",
+	"view.hidden": "隐藏文件",
 	"command.addFolder": "添加文件夹",
 	"command.refresh": "刷新",
 	"command.openFile": "打开文件",

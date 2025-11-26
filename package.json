@@ -2,7 +2,7 @@
   "name": "notelook",
   "displayName": "NoteLook",
   "publisher": "anghunk",
-  "description": "一款强大的笔记管理插件，支持收藏夹、最近文件和搜索功能。",
+  "description": "A powerful note management plugin that supports bookmarks, recent files, and search functionality.",
   "version": "0.0.1",
   "repository": {
     "type": "git",
