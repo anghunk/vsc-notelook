@@ -3,7 +3,7 @@
   "displayName": "NoteLook",
   "publisher": "anghunk",
   "description": "A powerful note management plugin that supports bookmarks, recent files, and search functionality.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/anghunk/vsc-notelook"
