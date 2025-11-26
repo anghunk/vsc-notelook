@@ -1,6 +1,6 @@
 [简体中文](#notelook中文) | [English](#notelook)
 
-开发这个扩展的初衷是，我只想在电脑上打开一个vscode 窗口。
+开发这个扩展的初衷是，我只想在电脑上打开一个 vscode 窗口。
 
 但是有时候在开发代码的时候，我也想要查看本地笔记、编辑等，因此有了这个扩展的设计，有同样需求的伙计可以试一下这个工具。
 
@@ -8,7 +8,7 @@ The original intention of developing this extension was simply to open a VSCode 
 
 > A powerful note management plugin that supports bookmarks, recent files, and search functionality.
 
-> 一款强大的笔记管理插件，支持收藏夹、最近文件和搜索功能。
+> 一款强大的 vscode 笔记管理插件，支持收藏夹、最近文件和搜索功能。
 
 [Github](https://github.com/anghunk/vsc-notelook) | [Extensions](https://marketplace.visualstudio.com/items?itemName=anghunk.notelook)
 
@@ -47,12 +47,12 @@ VS Code 笔记管理扩展。
 
 ## 功能
 
-- **文件管理** - 独立文件浏览器,支持新建、删除、重命名、复制、粘贴、拖拽移动
+- **文件管理** - 独立文件浏览器，支持新建、删除、重命名、复制、粘贴、拖拽移动
 - **搜索** - 实时递归搜索文件和文件夹
-- **快速访问** - 收藏常用文件和文件夹,全局保存
-- **最近打开** - 自动记录最近编辑的文件(最多20个)
-- **隐藏管理** - 隐藏不需要的文件,可恢复
-- **Markdown 预览** - 右键预览 .md 文件,实时同步
+- **快速访问** - 收藏常用文件和文件夹，全局保存
+- **最近打开** - 自动记录最近编辑的文件 (最多 20 个)
+- **隐藏管理** - 隐藏不需要的文件，可恢复
+- **Markdown 预览** - 右键预览 .md 文件，实时同步
 
 ## 使用
 
