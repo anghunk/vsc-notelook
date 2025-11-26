@@ -1,5 +1,11 @@
 [简体中文](#notelook中文) | [English](#notelook)
 
+开发这个扩展的初衷是，我只想在电脑上打开一个vscode 窗口。
+
+但是有时候在开发代码的时候，我也想要查看本地笔记、编辑等，因此有了这个扩展的设计，有同样需求的伙计可以试一下这个工具。
+
+The original intention of developing this extension was simply to open a VSCode window on the computer. However, sometimes when writing code, I also want to view local notes and make edits, hence the design of this extension. Anyone with the same needs can try out this tool.
+
 > A powerful note management plugin that supports bookmarks, recent files, and search functionality.
 
 > 一款强大的笔记管理插件，支持收藏夹、最近文件和搜索功能。
